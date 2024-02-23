@@ -47,6 +47,7 @@ const CardContainer = styled.div({
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
+  textDecoration: "none",
   [mq[0]]: {
     width: "90%",
   },
