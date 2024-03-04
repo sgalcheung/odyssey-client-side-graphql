@@ -2,6 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import { colors, mq } from "../styles";
 import { humanReadableTimeFromSeconds } from "../utils/helpers";
+import { Link } from 'react-router-dom'
 
 /**
  * Track Card component renders basic info in a card format
@@ -37,7 +38,7 @@ const TrackCard: React.FC<{ track: any }> = ({ track }) => {
 export default TrackCard;
 
 /** Track Card styled components */
-const CardContainer = styled.div({
+const CardContainer = styled(Link)({
   borderRadius: 6,
   color: colors.text,
   backgroundSize: "cover",
