@@ -9,10 +9,10 @@ import { Link } from 'react-router-dom'
  * for each track populating the tracks grid homepage.
  */
 const TrackCard: React.FC<{ track: any }> = ({ track }) => {
-  const { title, thumbnail, author, length, modulesCount } = track;
+  const { title, thumbnail, author, length, modulesCount, id } = track;
 
   return (
-    <CardContainer>
+    <CardContainer to={`/track/${id}`}>
       <CardContent>
         <CardImageContainer>
           <CardImage src={thumbnail || ""} alt={title} />
