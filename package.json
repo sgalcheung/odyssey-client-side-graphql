@@ -1,5 +1,5 @@
 {
-  "name": "Odyssey Client-side GraphQL",
+  "name": "odyssey-client-side-graphql",
   "version": "1.0.0",
   "private": true,
   "description": "demo app for Odyssey's Client-Side GraphQL with React and Apollo course",
